@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.5.RELEASE'
+	id 'java'
+	id 'idea'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+group = 'com.unyx'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'io.jsonwebtoken:jjwt:0.9.0'
+	implementation 'com.mashape.unirest:unirest-java:1.4.6'
+	//implementation platform('software.amazon.awssdk:bom:2.5.29')
+	//implementation 'software.amazon.awssdk:sns'
+	implementation 'com.amazonaws:aws-java-sdk:1.11.578'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//implementation 'org.springframework.social:spring-social-core:1.1.4.RELEASE'
+	//implementation 'org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE'
+
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	//compile group: 'org.springframework.social', name: 'spring-social-core', version: '1.1.6.RELEASE'
+
+
+}
+
