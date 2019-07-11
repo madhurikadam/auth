@@ -9,11 +9,11 @@
 
 ## APIs
 - Generate OTP on number you want to register
-*/generate-otp
+* /generate-otp
 - Varify the OTP
-*/verify-otp
+* /verify-otp
 - Create JWT custom token either using facebook token or otp verification 
-*/token
+* /token
 
 ## Deploy
 - Set the facebook api key and secret and aws api key and secret 
